@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Monte-carlo circle area</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<h1>Approximating circle area with Monte-carlo</h1>
+		<div>
+			<canvas id="main-canvas" width="320" height="320">Canvas not supported</canvas>
+		</div>
+
+		<div id="results">
+			<label>Ratio:</label>
+			<span id="ratio"></span>
+			<br/>
+			<label>Total area:</label>
+			<span id="squareArea"></span>
+			<br/>
+			<label>Circle area estimation:</label>
+			<span id="circle-area"></span>
+			<br/>
+			<label>Real circle area (Pi*r^2):</label>
+			<span id="circle-area-real"></span>
+			<br/>
+		</div>
+		
+		<script src="dist/random.js"></script>
+		<script src="dist/circleAreaCalculator.js"></script>
+		<script src="dist/main.js"></script>
+	</body>
+</html>
